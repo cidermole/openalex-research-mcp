@@ -6,6 +6,7 @@ All notable changes to the OpenAlex MCP Server will be documented in this file.
 
 ### Added
 - **Streamable HTTP transport**: Run with `MCP_TRANSPORT=http`, `npm run start:http`, or `--http`. Listens on `PORT` / `MCP_HTTP_PORT` (default 3100) at `MCP_HTTP_PATH` (default `/mcp`). Includes `GET /health`.
+- **Docker**: `Dockerfile` and `docker-compose.yml` run the server in Streamable HTTP mode on port 3100 (`docker compose up --build`).
 
 ### Fixed
 - Venue-name filters now resolve source names to OpenAlex source IDs before searching works. Blank or unmatched names fail rather than silently returning unfiltered or unrelated results; use an ISSN or source ID when a name cannot be resolved.

@@ -1,0 +1,12 @@
+node_modules
+build
+.git
+.github
+.cursor
+coverage
+*.log
+.env
+.env.*
+tests
+test-*.js
+scripts

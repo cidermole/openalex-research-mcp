@@ -182,6 +182,18 @@ npm install
 npm run build
 ```
 
+### Option 3: Docker (Streamable HTTP)
+
+The image exposes the MCP server over Streamable HTTP on port `3100` at `/mcp`.
+
+```bash
+export OPENALEX_EMAIL="your.email@example.com"
+export OPENALEX_API_KEY="your-api-key"  # premium users
+docker compose up --build
+```
+
+Point your MCP client at `http://localhost:3100/mcp`. Health check: `GET http://localhost:3100/health`.
+
 ## Configuration
 
 ### Environment Variables (Optional but Recommended)
